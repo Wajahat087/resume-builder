@@ -1,0 +1,111 @@
+/* General Styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+  
+  .resume-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left Column Styling */
+  .left-column {
+    flex: 1;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
+  }
+  
+  .contact a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .skills-section h2 {
+    margin-top: 20px;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Right Column Styling */
+  .right-column {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .right-column h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .right-column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .right-column .experience h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resume-container {
+      flex-direction: column;
+    }
+  
+    .left-column {
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .right-column {
+      border-radius: 0 0 8px 8px;
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 0.5px;
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
